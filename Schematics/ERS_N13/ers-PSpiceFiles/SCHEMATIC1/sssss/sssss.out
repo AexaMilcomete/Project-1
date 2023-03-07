@@ -1,0 +1,235 @@
+
+**** 11/26/22 13:37:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sssss"  [ E:\FACULTATE\AN 3\PROIECT 1\P1_2022_432E_Milcomete_Alexa_Carola_SERS_N13_OrCAD\Schematics\ERS_N13\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sssss.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/bc846b.lib" 
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/bc856b.lib" 
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/bzx84c2v7.lib" 
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/mjd31cg.lib" 
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/opto.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Alexa\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ERS
+R_R27         N289288 N289188  15K  
+R_R14         0 N289906  470  
+Q_Q5         N289288 N289288 N288990 QBC846B 
+Q_Q9         N289188 N289096 N290060 QBC846B 
+R_R32         N289906 N289096  10k  
+R_R3         N289150 N289188  2.2k  
+R_R26         0 N288990  100  
+R_R8         N289014 N289020  5.6K  
+Q_Q1         N289846 N289150 N289774 QBC856B 
+Q_Q3         N289272 N289842 N289878 QBC846B 
+R_R34         N289136 N289150  4.7k  
+R_R29         0 N289846  10k  
+Q_Q7         N289906 N289272 N289188 QBC856B 
+X_P1         N288996 N298915 N289014 POT PARAMS: SET={SET} VALUE=2K
+R_R19         N289188 N289272  1.5k  
+R_R10         0 N288996  2K  
+Q_Q10         N289096 N290086 0 QBC846B 
+R_R20         N289188 N289680  1.5k  
+V_V1         N289188 0 26Vdc
+R_R28         0 N2896041  100  
+Q_Q4         N289680 N289846 N289878 QBC846B 
+R_R31         0 N290086  4.7  
+R_R12         N290086 N289020  {LOAD}  
+Q_Q6         N289878 N289288 N2896041 QBC846B 
+R_R9         N289774 N289188  22k  
+Q_Q2         N289842 N298915 N289774 QBC856B 
+R_R30         0 N289842  10k  
+Q_Q11         N289096 N289136 0 QBC846B 
+D_D1         0 N289150 BZX84-C2V7 
+Q_Q8         N289188 N290060 N289020 QMJD31C 
+D_D2         N289188 N2914031 MLED81
+D_D3         N289020 N295003 MLED81
+R_R35         0 N2914031  2.2k  
+R_R36         0 N295003  1.5k  
+R_R33         N289136 N2938000  100  
+R_R37         N2938000 0  1k  
+R_R38         0 N290086  4.7  
+R_R39         0 N290086  4.7  
+.PARAM  load=650 set=0.5
+
+**** RESUMING sssss.cir ****
+.END
+
+**** 11/26/22 13:37:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sssss"  [ E:\FACULTATE\AN 3\PROIECT 1\P1_2022_432E_Milcomete_Alexa_Carola_SERS_N13_OrCAD\Schematics\ERS_N13\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BZX84-C2V7      MLED81          
+          IS  110.880000E-18   10.000000E-09 
+           N     .92657         1.1248       
+         ISR    1.515900E-06   10.010000E-21 
+         IKF  147.68           45.752000E-15 
+          BV    2.7639          5.4169       
+         IBV     .06977        10            
+          RS     .85899         1.2366       
+          TT   17.889000E-09    5.000000E-09 
+         CJO  344.690000E-12   25.000000E-12 
+          VJ     .72935          .75         
+           M     .31964          .3333       
+
+
+**** 11/26/22 13:37:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sssss"  [ E:\FACULTATE\AN 3\PROIECT 1\P1_2022_432E_Milcomete_Alexa_Carola_SERS_N13_OrCAD\Schematics\ERS_N13\
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC846B         QBC856B         QMJD31C         
+               NPN             PNP             NPN             
+       LEVEL    1               1               1            
+          IS   18.220000E-15   20.140000E-15   90.620200E-12 
+          EG                                    1.05         
+          BF  324.4           315.3             3.418700E+03 
+          NF     .9932           .9974          1.17603      
+         VAF   82              39.15           29.2393       
+         IKF     .109            .079            .108267     
+         ISE  289.400000E-18    6.578000E-15  537.193000E-09 
+          NE    1.4             1.45            4            
+          BR    8.29            8.68          367.353        
+          NR     .9931           .9952          5            
+         VAR   17.9             9.5             1.631        
+         IKR     .09             .09            1.15207      
+         ISC    9.982000E-12   16.330000E-15    1.157540E-09 
+          NC    1.763           1.15            1.49179      
+         ISS    0               0               0            
+          RB   10              10              22.4853       
+         RBM    5               5.000000E-06    1.000000E-12 
+         IRB    5.000000E-06    5.000000E-06    2.209370E-03 
+          RE     .649            .663         100.000000E-06 
+          RC     .7014           .718            .138633     
+         CJE   12.440000E-12   11.350000E-12  373.889000E-12 
+         VJE     .7579           .7071           .67672      
+         MJE     .3656           .3808           .575056     
+         CJC    3.347000E-12    6.395000E-12  352.510000E-12 
+         VJC     .5463           .4951           .884306     
+         MJC     .391            .44             .473486     
+        XCJC     .6193           .6288           .1          
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+         MJS     .333            .333            .5          
+          FC     .979            .9059           .8          
+          TF  490.800000E-12  654.600000E-12   10.000000E-09 
+         XTF    9.51            5.387           3.4926       
+         VTF    2.927           6.245          12.6615       
+         ITF     .3131           .2108           .052395     
+          TR   90.000000E-09   55.000000E-09    3.298030E-06 
+         XTB                                  999.997000E-15 
+         XTI                                    1.000000E-12 
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.2             2.42         
+           D     .87             .52             .87         
+
+
+**** 11/26/22 13:37:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sssss"  [ E:\FACULTATE\AN 3\PROIECT 1\P1_2022_432E_Milcomete_Alexa_Carola_SERS_N13_OrCAD\Schematics\ERS_N13\
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N288990)     .1673                   (N288996)    1.8425                       
+
+(N289014)    3.6503                   (N289020)    8.6148                       
+
+(N289096)    9.7816                   (N289136)     .5165                       
+
+(N289150)    2.7237                   (N289188)   26.0000                       
+
+(N289272)   25.2740                   (N289288)     .8182                       
+
+(N289680)   24.3150                   (N289774)    3.3873                       
+
+(N289842)    3.3581                   (N289846)    3.3774                       
+
+(N289878)    2.7434                   (N289906)    9.8923                       
+
+(N290060)    9.1986                   (N290086)     .0207                       
+
+(N295003)    7.4875                   (N298915)    2.7638                       
+
+(N2896041)     .1679                  (N2914031)   24.8180                      
+
+(N2938000)     .4696                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -6.639E-02
+
+    TOTAL POWER DISSIPATION   1.73E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/26/22 13:37:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sssss"  [ E:\FACULTATE\AN 3\PROIECT 1\P1_2022_432E_Milcomete_Alexa_Carola_SERS_N13_OrCAD\Schematics\ERS_N13\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

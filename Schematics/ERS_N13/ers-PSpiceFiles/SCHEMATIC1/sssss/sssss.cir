@@ -1,0 +1,24 @@
+** Profile: "SCHEMATIC1-sssss"  [ E:\FACULTATE\AN 3\PROIECT 1\P1_2022_432E_Milcomete_Alexa_Carola_SERS_N13_OrCAD\Schematics\ERS_N13\ers-pspicefiles\schematic1\sssss.sim ] 
+
+** Creating circuit file "sssss.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/bc846b.lib" 
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/bc856b.lib" 
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/bzx84c2v7.lib" 
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/mjd31cg.lib" 
+.LIB "e:/facultate/an 3/proiect 1/biblioteci spice/opto.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Alexa\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

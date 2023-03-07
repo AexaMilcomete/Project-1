@@ -1,0 +1,91 @@
+
+**** 11/16/22 01:08:57 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sssss"  [ E:\FACULTATE\AN 3\PROIECT 1\P1_2022_432E_Milcomete_Alexa_Carola_SERS_N13_OrCAD\Schematics\ERS_N13\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sssss.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "E:/FACULTATE/AN 3/PROIECT 1/ers13/biblioteci spice/bc846b.lib" 
+---------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "E:/FACULTATE/AN 3/PROIECT 1/ers13/biblioteci spice/bc856b.lib" 
+---------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "E:/FACULTATE/AN 3/PROIECT 1/ers13/biblioteci spice/bzx84c2v7.lib" 
+------------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "E:/FACULTATE/AN 3/PROIECT 1/ers13/biblioteci spice/mjd31cg.lib" 
+----------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "E:/FACULTATE/AN 3/PROIECT 1/ers13/biblioteci spice/opto.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Alexa\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+-------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM LOAD 10 100 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ERS
+R_R27         N289288 N289188  15K  
+R_R14         0 N289906  470  
+Q_Q5         N289288 N289288 N288990 QBC846B 
+Q_Q9         N289188 N289096 N290060 QBC846B 
+R_R32         N289906 N289096  10k  
+R_R3         N289150 N289188  2.2k  
+R_R26         0 N288990  100  
+R_R8         N289014 N289020  5.6K  
+Q_Q1         N289846 N289150 N289774 QBC856B 
+Q_Q3         N289272 N289842 N289878 QBC846B 
+R_R34         N289136 N289150  4.7k  
+R_R29         0 N289846  10k  
+Q_Q7         N289906 N289272 N289188 QBC856B 
+X_P1         N288996 N289002 N289014 POT PARAMS: SET={SET} VALUE=2K
+R_R19         N289188 N289272  1.5k  
+R_R10         0 N288996  2K  
+Q_Q10         N289096 N290086 0 QBC846B 
+R_R20         N289188 N289680  1.5k  
+V_V1         N289188 0 26Vdc
+R_R28         0 N2896041  100  
+Q_Q4         N289680 N289846 N289878 QBC846B 
+R_R31         0 N290086  4.7  
+R_R12         N290086 N289020  {LOAD}  
+Q_Q6         N289878 N289288 N2896041 QBC846B 
+R_R9         N289774 N289188  22k  
+Q_Q2         N289842 N289002 N289774 QBC856B 
+R_R30         0 N289842  10k  
+Q_Q11         N289096 N289136 0 QBC846B 
+D_D1         0 N289150 BZX84-C2V7 
+Q_Q8         N289188 N290060 N289020 QMJD31C 
+D_D2         N289188 N2914031 MLED81
+D_D3         N289020 N295003 MLED81
+R_R35         0 N2914031  2.2k  
+R_R36         0 N295003  1.5k  
+R_R33         N289136 N2938000  100  
+R_R37         N2938000 0  1k  
+R_R38         0 N290086  4.7  
+R_R39         0 N290086  4.7  
+.PARAM  load=650 set=0.5
+
+**** RESUMING sssss.cir ****
+.END
+

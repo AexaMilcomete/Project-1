@@ -1,0 +1,30 @@
+\t (00:00:11) allegro 16.6-2015 S059 (v16-6-112ER) Windows 32
+\t (00:00:11)     Journal start - Sun Jan 15 19:38:07 2023
+\t (00:00:11)         Host=DESKTOP-SGUB4CV User=Alexa Pid=7748 CPUs=8
+\t (00:00:11) CmdLine= C:\OrCAD\OrCAD_16.6_Lite\tools\pcb\bin\allegro.exe -orcad
+\t (00:00:11) 
+\t (00:00:11) Starting new design...
+\i (00:00:12) trapsize 837
+\i (00:00:12) trapsize 817
+\i (00:00:12) trapsize 840
+\i (00:00:13) trapsize 716
+\i (00:00:13) trapsize 1448
+\i (00:00:14) generaledit 
+\i (00:00:23) open 
+\i (00:00:28) fillin "LAYOUT.brd"
+\t (00:00:28) Opening existing design...
+\i (00:00:28) trapsize 1360
+\d (00:00:28) Design opened: C:/Users/Alexa/OneDrive/Desktop/P1_2022_432E_Milcomete_Alexa-Carola_SERS_OrCAD/Layout/LAYOUT.brd
+\i (00:00:29) generaledit 
+\i (00:01:03) setwindow form.vf_vis
+\i (00:01:03) FORM vf_vis 2 all_colorvisible NO 
+\i (00:01:05) FORM vf_vis 3 all_colorvisible NO 
+\i (00:03:04) setwindow pcb
+\i (00:03:04) pick grid -972.02 321.03
+\t (00:03:04) last pick:  -970.00 320.00
+\i (00:03:13) setwindow form.vf_vis
+\i (00:03:13) FORM vf_vis 2 all_colorvisible YES 
+\i (00:03:15) FORM vf_vis 1 all_colorvisible NO 
+\i (00:04:56) setwindow pcb
+\i (00:04:56) exit 
+\t (00:04:57)     Journal end - Sun Jan 15 19:42:54 2023
